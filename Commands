@@ -1,0 +1,38 @@
+Run Command Prompt as Adminstrator,
+Goto the project folder
+
+Step 01 :
+python.exe -m pip install --upgrade pip
+
+Step 02:
+pip install virtualenv
+
+Step 03:
+virtualenv MyEnv -p python
+
+Step 04:
+.\MyEnv\Scripts\activate
+
+Step 05:
+pip install streamlit
+
+Step 06:
+pip install matplotlib scikit-learn
+
+Step 07: Installing Python Kernel in the Virtual Envivronment MyEnv
+py -m pip install ipykernel
+py -m ipykernel install --user
+
+name - ASCII subject name and recording number
+MDVP:Fo(Hz) - Average vocal fundamental frequency
+MDVP:Fhi(Hz) - Maximum vocal fundamental frequency
+MDVP:Flo(Hz) - Minimum vocal fundamental frequency
+MDVP:Jitter(%),MDVP:Jitter(Abs),MDVP:RAP,MDVP:PPQ,Jitter:DDP - Several measures of variation in fundamental frequency
+MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA - Several measures of variation in amplitude
+NHR,HNR - Two measures of ratio of noise to tonal components in the voice
+status - Health status of the subject (one) - Parkinson's, (zero) - healthy
+RPDE,D2 - Two nonlinear dynamical complexity measures
+DFA - Signal fractal scaling exponent
+spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation
+
+1. Line chart to display the total_updrs values
